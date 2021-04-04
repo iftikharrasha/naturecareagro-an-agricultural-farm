@@ -1,0 +1,138 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.nature-item {
+		width: 50%;
+	}
+
+	.about-height {
+		height: 90px;
+	}
+
+	.about-text {
+		height: 300px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.nature {
+		margin-top: 0px;
+	}
+
+	.nature-item h3 {
+		font-size: 30px;
+	}
+
+	.nature-item p {
+		font-size: 22px;
+	}
+
+	.hero-text {
+		margin-top: 80%;
+	}
+
+	.hero-text h1 {
+		font-size: 35px;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.nature-item {
+		width: 50%;
+	}
+
+	.about-height {
+		height: 90px;
+	}
+
+	.about-text {
+		height: 300px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.nature {
+		margin-top: 0px;
+	}
+
+	.hero-text {
+		margin-top: 60%;
+	}
+
+	.hero-text h1 {
+		font-size: 50px;
+	}
+}
+
+/* Medium devices(sm) (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.nature-item {
+		width: 50%;
+	}
+
+	.nature {
+		margin-top: 0px;
+	}
+
+	.about-height {
+		height: 90px;
+	}
+
+	.about-text {
+		height: 300px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.hero-text {
+		margin-top: 50%;
+	}
+
+	.hero-text h1 {
+		font-size: 60px;
+	}
+}
+
+/* Large devices(md) (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.hero-text h1 {
+		font-size: 60px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/*
+*
+*
+*
+*
+*
+*
+*
+/****** Extra extra small devices (s6 mobiles, 320px and below) *******/
+@media (max-width: 320px) {
+	.navbar-brand {
+		width: 65%;
+	}
+
+	.hero-text {
+		margin-top: 100%;
+	}
+
+	.hero-text h1 {
+		font-size: 25px;
+	}
+}
+
+/****** Extra extra small devices (s6 mobiles, 375px and below) *******/
+@media (min-width: 321px) and (max-width: 376px) {
+	.hero-text {
+		margin-top: 85%;
+	}
+
+	.hero-text h1 {
+		font-size: 25px;
+	}
+}
