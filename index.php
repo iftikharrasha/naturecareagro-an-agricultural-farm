@@ -7,7 +7,6 @@
     <title>Nature & Care Agro Products Ltd.</title>
 
     <link rel="icon" href="img/icon.png" type="image/x-icon">
-
     <!--site details-->
     <meta name="description" content="Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.">
     <meta name="keywords" content="Nature & Care Agro Products Ltd., Nature and Care, Argiculture, Agrochemical , Fertilizers, Nourishment, Farmers, Bangladesh">
@@ -635,7 +634,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

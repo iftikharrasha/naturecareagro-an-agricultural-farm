@@ -10,6 +10,11 @@
 }
 
 @font-face {
+	font-family: "Oswald-Bold";
+	src: url(../font/Oswald-Bold.ttf);
+}
+
+@font-face {
 	font-family: "Nunito-light";
 	src: url(../font/Nunito-Light.ttf);
 }
@@ -83,7 +88,7 @@ body {
 
 /** font sizes **/
 .headline {
-	font-family: fantasy, sans-serif;
+	font-family: 'Oswald-Bold', sans-serif;
 	font-size: 38px;
 }
 
@@ -106,12 +111,12 @@ body {
 }
 
 .fan-30 {
-	font-family: fantasy, sans-serif;
+	font-family: 'Oswald-Bold', sans-serif;
 	font-size: 30px;
 }
 
 .fan-80 {
-	font-family: fantasy, sans-serif;
+	font-family: 'Oswald-Bold', sans-serif;
 	font-size: 80px;
 }
 
@@ -134,11 +139,10 @@ body {
 
 /** buttons **/
 .btn-tag-1 {
-	font-family: fantasy, sans-serif;
+	font-family: 'Oswald-Bold', sans-serif;
 	border-radius: 5px;
 	border: 3px solid #282828;
 	letter-spacing: 1px;
-	word-spacing: 5px;
 }
 
 .btn-tag-1:hover {
