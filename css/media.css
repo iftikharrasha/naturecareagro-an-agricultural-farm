@@ -50,7 +50,7 @@
 	}
 
 	.nature-third {
-		padding-bottom: 0;
+		padding-bottom: 60px;
 	}
 
 	.bangla {
@@ -89,6 +89,7 @@
 
 	.border-r-lg {
 		border-right: 0px;
+		padding-top: 50px;
 	}
 
 	.border-l-lg {

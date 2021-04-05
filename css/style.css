@@ -44,6 +44,10 @@ body {
 	font-size: 1rem;
 }
 
+.overflowX {
+	overflow-x: hidden;
+}
+
 /** colors **/
 .c-tag-1 {
 	color: #2a7d2e;

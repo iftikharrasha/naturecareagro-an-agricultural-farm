@@ -119,7 +119,7 @@
               <div class="container">
                   <div class="row justify-content-center text-center">
                       <div class="col-12 d-flex justify-content-center align-items-center">
-                          <div class="hero-text">
+                          <div class="hero-text" data-aos="fade-up">
                               <h1 class="dela-80 c-tag-4">Welcome to the<br>Home of Nature.</h1>
                               <div class="my-5">
                                   <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
@@ -141,25 +141,25 @@
                                 <h2 class="my-5 headline c-tag-3">Services <span class="c-tag-6">&</span> Products</h2>
                                 <div class="row pt-5">
                                     <div class="col-lg-3 col-sm-6">
-                                        <div class="service-item">
+                                        <div class="service-item" data-aos="fade-up" data-aos-duration="500">
                                             <img class="img-fluid w-50" src="img/wheelbarrow.svg" alt="wheelbarrow">
                                             <h3 class="my-3 semi-16">Fertilizing</h3>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-sm-6">
-                                        <div class="service-item">
+                                        <div class="service-item" data-aos="fade-up" data-aos-duration="900">
                                             <img class="img-fluid w-50" src="img/plant.svg" alt="plant">
                                             <h3 class="my-3 semi-16">Nourishment</h3>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-sm-6">
-                                        <div class="service-item">
+                                        <div class="service-item" data-aos="fade-up" data-aos-duration="1300">
                                             <img class="img-fluid w-50" src="img/farmer.svg" alt="farmer">
                                             <h3 class="my-3 semi-16">Farming</h3>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-sm-6">
-                                        <div class="service-item">
+                                        <div class="service-item" data-aos="fade-up" data-aos-duration="1700">
                                             <img class="img-fluid w-50" src="img/sack.svg" alt="sack">
                                             <h3 class="my-3 semi-16">Sacking</h3>
                                         </div>
@@ -237,47 +237,47 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="row bg-tag-3">
-                            <div class="col-md-12 my-4">
-                                <div class="farmers-img">
+                            <div class="col-md-12 my-4 overflowX">
+                                <div class="farmers-img" data-aos="fade-left" data-aos-duration="1500">
                                     <img src="img/farmers.jpg" alt="farmers">
                                 </div>
                             </div>
                             <div class="col-lg-7">
                                 <div class="about-history px-sm-4 my-4">
-                                    <h3>
+                                    <h3 data-aos="fade-up" data-aos-duration="500">
                                         <span class="fan-30 c-tag-1">Since 2013!
                                         </span>
                                     </h3>
-                                    <p class="c-tag-5">One 13th May, 2013, a business that started with only 4 employees in the corner room of a rented apartment has now become a common name amongst agrochemical distributors, retailers and farmers almost all over Bangladesh. This overwhelming acceptance has been possible for ensuring the consistency of excolence in quality for the last seven years.</p>
-                                    <div class="year-details">
+                                    <p class="c-tag-5" data-aos="fade-up" data-aos-duration="500">One 13th May, 2013, a business that started with only 4 employees in the corner room of a rented apartment has now become a common name amongst agrochemical distributors, retailers and farmers almost all over Bangladesh. This overwhelming acceptance has been possible for ensuring the consistency of excolence in quality for the last seven years.</p>
+                                    <div class="year-details" data-aos="fade-up" data-aos-duration="1000">
                                         <span class="fan-30 c-tag-1">2015
                                         </span>
                                         <p class="c-tag-5">With the increasing number of sales and distributors in 2015, the amount of import value increased twice and we built our own repackaging factory in BSCIC Industrial Area, Joypurhat. Our market size increased as well that facilitated the purchase of our own covered vans to ensure timely delivery.
                                         </p>
                                     </div>
 
-                                    <div class="year-details">
+                                    <div class="year-details" data-aos="fade-up" data-aos-duration="1100">
                                         <span class="fan-30 c-tag-1">2016
                                         </span>
                                         <p class="c-tag-5">We earned membership at Bangladesh Crop Protection Association (BCPA) as our market acceptance increased by the day. The number of our distributors all over Bangladesh increased from 200 to 700 by this time.
                                         </p>
                                     </div>
 
-                                    <div class="year-details">
+                                    <div class="year-details" data-aos="fade-up" data-aos-duration="1300">
                                         <span class="fan-30 c-tag-1">2017
                                         </span>
                                         <p class="c-tag-5">Both employees and sales increased remarkably in the 5th year since our inception and 6 dynamic sales centers have been developed in Bogura, Dhaka, Rangpur, Rajshahi, Jhenaidah and Chittagong. Our Central Depot also became operational this year from BSCIC Industrial Area of Joypurhat beside our factory.
                                         </p>
                                     </div>
 
-                                    <div class="year-details">
+                                    <div class="year-details" data-aos="fade-up" data-aos-duration="1400">
                                         <span class="fan-30 c-tag-1">2019
                                         </span>
                                         <p class="c-tag-5">We received 29 registered pesticides and 10 registered fertilizers by 2018 and we are successfully selling and marketing them without any negative review till date. Many local pesticide companies have started purchasing our products in bulk for its well reputation and effectiveness.
                                         </p>
                                     </div>
 
-                                    <div class="year-details">
+                                    <div class="year-details" data-aos="fade-up" data-aos-duration="1500">
                                         <span class="fan-30 c-tag-1">2021
                                         </span>
                                         <p class="c-tag-5">Due to the impact of COVID 19 we have gradually shifted our business model to cash program from credit program in 2020 to ensure sustainability. By 2021 we now stand as one of the few agrochemical companies in the market who are running a cash program successfully. We have been involved in farmer level activities and that has given us a customer base of over 5000 retailers and farmers all over the country.
@@ -285,12 +285,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
-                                <div class="about-img">
+                            <div class="col-lg-5 overflowX">
+                                <div class="about-img" data-aos="fade-left" data-aos-duration="1500">
                                     <img src="img/crops.jpg" alt="crops">
                                 </div>
 
-                                <div class="bg-tag-1 p-4 p-sm-5 my-4">
+                                <div class="bg-tag-1 p-4 p-sm-5 my-4" data-aos="fade-right" data-aos-duration="1500">
                                     <h3>
                                         <span class="fan-30 c-tag-4">Milestone
                                         </span>
@@ -300,7 +300,7 @@
                                     </p>
                                 </div>
 
-                                <div class="bg-tag-2 p-4 p-sm-5">
+                                <div class="bg-tag-2 p-4 p-sm-5" data-aos="fade-left" data-aos-duration="1500">
                                     <h3>
                                         <span class="fan-30 c-tag-1">Future Prospect
                                         </span>
@@ -356,8 +356,8 @@
                             </div>
                             <div class="about-details py-5">
                                 <div class="row align-items-center">
-                                    <div class="col-12 col-lg-4">
-                                      <div>
+                                    <div class="col-12 col-lg-4 overflowX">
+                                      <div data-aos="fade-right" data-aos-duration="1500">
                                           <h2 class="text-lg-right text-center headline c-tag-2">About Us
                                           </h2>
                                             <p class="d-none d-sm-block text-lg-right text-sm-center my-4">
@@ -374,8 +374,8 @@
                                     </div>
                                     <div class="col-12 my-3 d-lg-none">
                                     </div>
-                                    <div class="col-12 col-lg-4">
-                                      <div>
+                                    <div class="col-12 col-lg-4 overflowX">
+                                      <div data-aos="fade-left" data-aos-duration="1500">
                                         <p class="c-tag-2 us">
                                             Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.
                                         </p>
@@ -399,7 +399,7 @@
                             <div class="about-details">
                                 <div class="row align-items-center">
                                     <div class="col-12">
-                                      <div>
+                                      <div data-aos="fade-up" data-aos-duration="1500">
                                         <div class="section-heading">
                                           <p class="text-center c-tag-2">Our tagline . . .</p>
                                           <h2 class="text-center c-tag-6 bangla">" সমৃদ্ধির পথে কৃষকের সাথে "
@@ -420,16 +420,16 @@
             <div class="container c_custom">
               <div class="row">
                     <div class="col-lg-6 text-center">
-                        <h2 class="my-5 headline c-tag-3">Walk Through</h2>
+                        <h2 class="my-5 headline c-tag-3" data-aos="zoom-in" data-aos-duration="1500">Walk Through</h2>
                     </div>
-                    <div class="offset-lg-1 col-lg-10 mb-5 text-left">
-                          <p class="reg-20 p-3 px-sm-5 px-lg-0">
+                    <div class="offset-lg-1 col-lg-10 mb-5 text-left overflowX">
+                          <p class="reg-20 p-3 px-sm-5 px-lg-0" data-aos="fade-right" data-aos-duration="1500">
                               We have always been focused to ensure this right combination from our well renowned Suppliers in China and India.  Providing the best quality of pesticides at the most affordable price has always been both a challenge and strength for our organization. Md. Iqbal Hossain, the Managing Director has initiated this challenging business proposition and has made it successful with his abundant experience of 23 years and the unending support of the entire team of Nature & Care Agro Products Ltd.
                           </p>
                 </div>
-                    <div class="col-lg-12">
-                          <div class="thumb-video text-center">
-                                  <a class="video-button video-img-bg" href="vdo/test.mp4"  data-fancybox data-ratio="2">
+                    <div class="col-lg-12 overflowX">
+                          <div class="thumb-video text-center" data-aos="fade-left" data-aos-duration="1500">
+                                  <a class="video-button video-img-bg" href="vdo/test.mp4" data-fancybox data-ratio="2">
                                       <span class="play-button">
                                           <img src="img/play.svg" alt="Image" class="img-fluid">
                                       </span>
@@ -445,14 +445,16 @@
             <div class="container c_custom">
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="retailer-img d-flex justify-content-center align-items-center">
-                            <h2 class="headline c-tag-2">Our Retailers</h2>
-                        </div>
-                        <div class="bg-tag-1 p-4 p-sm-5">
-                            <h4 class="c-tag-4 reg-30">We work with big and small.</h4>
-                            <p class="my-4 c-tag-2">
-                                Within a period of 7 years Nature & Care Agro Ldt. has gained sustainable trust and popularity among the agrochemical retailers, distributors and farmers all over Bangladesh.
-                            </p>
+                        <div data-aos="flip-left" data-aos-duration="1500">
+                            <div class="retailer-img d-flex justify-content-center align-items-center">
+                                <h2 class="headline c-tag-2">Our Retailers</h2>
+                            </div>
+                            <div class="bg-tag-1 p-4 p-sm-5">
+                                <h4 class="c-tag-4 reg-30">We work with big and small.</h4>
+                                <p class="my-4 c-tag-2">
+                                    Within a period of 7 years Nature & Care Agro Ldt. has gained sustainable trust and popularity among the agrochemical retailers, distributors and farmers all over Bangladesh.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="offset-lg-1 col-lg-7">
@@ -527,7 +529,7 @@
             <div class="container c_custom">
                 <div class="row pt-0 pt-lg-5">
                     <div class="col-lg-12 text-center mb-5">
-                        <h2 class="my-5 headline c-tag-3">Contact Us</h2>
+                        <h2 class="my-5 headline c-tag-3" data-aos="zoom-in" data-aos-duration="1500">Contact Us</h2>
                     </div>
                 </div>
                 <div class="row contact-shadow mx-2">
@@ -583,15 +585,17 @@
     <footer class="footer-section pb-0 py-lg-5 bg-tag-1">
         <div class="container c_custom">
           <div class="row">
-            <div class="border-r-lg col-lg-5 text-center text-lg-left">
-                <h3 class="headline text-white">About Us</h3>
-                <p class="mb-5 c-tag-2 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
-                <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="#">Our Products</a>
+            <div class="border-r-lg col-lg-5 text-center text-lg-left overflowX">
+                <div data-aos="fade-right" data-aos-duration="1500">
+                    <h3 class="headline text-white">About Us</h3>
+                    <p class="mb-5 c-tag-2 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
+                    <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="#">Our Products</a>
+                </div>
             </div>
 
             <div class="col-lg-3 ml-auto mt-lg-0 mt-5 xs-center text-center">
               <div>
-                <img class="img-fluid" src="img/nacl-xxl.svg" alt="brand">
+                <img class="img-fluid" data-aos="fade-zoom-in"  data-aos-duration="2000" src="img/nacl-xxl.svg" alt="brand">
                 <div class="copyright mt-5">
                     <p class="c-tag-2">
                         NATURE AND CARE AGRO © <script>document.write(new Date().getFullYear());</script>
@@ -601,9 +605,10 @@
               </div>
             </div>
 
-            <div class="border-l-lg col-lg-4 mt-lg-0 mt-5 ml-auto text-center text-lg-right">
-              <h3 class="headline text-white">Contact Us</h3>
-              <ul class="footer-list list-unstyled footer-links text-lg-right">
+            <div class="border-l-lg col-lg-4 mt-lg-0 mt-5 ml-auto text-center text-lg-right overflowX">
+            <div data-aos="fade-left" data-aos-duration="1500">
+                <h3 class="headline text-white">Contact Us</h3>
+                <ul class="footer-list list-unstyled footer-links text-lg-right">
                 <li>
                     <p class="c-tag-2">NATURE & CARE AGRO Ltd.<br>Company Number: C-109105</p>
                 </li>
@@ -616,6 +621,7 @@
                     <p class="c-tag-2">info@natureandcare.com<br>01785-788189</p>
                 </li>
               </ul>
+            </div>
             </div>
           </div>
         </div>

@@ -37,8 +37,8 @@ $('a[href*="#"]')
 
   AOS.init({
     duration: 800,
-    easing: 'slide',
-    once: true
+    easing: 'ease',
+    once: false
   });
  
  jQuery(document).ready(function($) {
