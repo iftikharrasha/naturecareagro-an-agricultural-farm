@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature & Care Agro Products Ltd.</title>
+    <title>Nature & Care Agro Products Ltd. | Home</title>
 
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
     <!--site details-->
     <meta name="description" content="Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.">
     <meta name="keywords" content="Nature & Care Agro Products Ltd., Nature and Care, Argiculture, Agrochemical , Fertilizers, Nourishment, Farmers, Bangladesh">
@@ -107,7 +108,7 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-2 px-3" href="#">Our products</a>
+                    <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-2 px-3" href="products.php">Our products</a>
                 </div>
                 </div>
             </nav>
@@ -116,58 +117,58 @@
 
     <main>
         <section class="hero" id="home">
-        <div class="hero-bg">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner hero-bg">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/welcome.jpg" alt="Home of Nature">
-                        <div class="carousel-caption hero-text" data-aos="fade-up">
-                            <h1 class="dela-80 c-tag-4">Welcome to the<br>Home of Nature.</h1>
-                            <div class="my-5">
-                                <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
-                                    EXPLORE AND DISCOVER
-                                </a>
+            <div class="hero-bg">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner hero-bg">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/welcome.jpg" alt="Home of Nature">
+                            <div class="carousel-caption hero-text" data-aos="fade-up">
+                                <h1 class="dela-80 c-tag-4">Welcome to the<br>Home of Nature.</h1>
+                                <div class="my-5">
+                                    <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
+                                        EXPLORE AND DISCOVER
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/quality.jpg" alt="Quality">
+                            <div class="carousel-caption hero-text" data-aos="fade-up">
+                                <h1 class="dela-80 c-tag-4">Ensuring Quality<br>Across Country.</h1>
+                                <div class="my-5">
+                                    <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
+                                        EXPLORE AND DISCOVER
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/nourishment.jpg" alt="Nourishment">
+                            <div class="carousel-caption hero-text" data-aos="fade-up">
+                                <h1 class="dela-80 c-tag-4">Farmers Proper<br>Nourishment</h1>
+                                <div class="my-5">
+                                    <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
+                                        EXPLORE AND DISCOVER
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/quality.jpg" alt="Quality">
-                        <div class="carousel-caption hero-text" data-aos="fade-up">
-                            <h1 class="dela-80 c-tag-4">Ensuring Quality<br>Across Country.</h1>
-                            <div class="my-5">
-                                <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
-                                    EXPLORE AND DISCOVER
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/nourishment.jpg" alt="Nourishment">
-                        <div class="carousel-caption hero-text" data-aos="fade-up">
-                            <h1 class="dela-80 c-tag-4">Farmers Proper<br>Nourishment</h1>
-                            <div class="my-5">
-                                <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
-                                    EXPLORE AND DISCOVER
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
         </section>
 
         <section class="services mt-5" id="service">
@@ -259,7 +260,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-center my-4">
-                            <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="#contact">Order Now</a>
+                            <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="products.php">Find more products</a>
                         </p>
                     </div>
                 </div>
@@ -403,10 +404,10 @@
                                 <div class="row align-items-center">
                                     <div class="col-12 col-lg-4 overflowX">
                                       <div data-aos="fade-right" data-aos-duration="1500">
-                                          <h2 class="text-lg-right text-center headline c-tag-2">About Us
-                                          </h2>
-                                            <p class="d-none d-sm-block text-lg-right text-sm-center my-4">
-                                            <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="#">Our Products</a>
+                                        <h2 class="text-lg-right text-center headline c-tag-2 pb-3">About Us
+                                        </h2>
+                                        <p class="d-none d-sm-block text-lg-right text-sm-center my-4">
+                                        <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="#contact">Contact Us</a>
                                         </p>
                                       </div>
                                     </div>
@@ -633,7 +634,7 @@
             <div class="border-r-lg col-lg-5 text-center text-lg-left overflowX">
                 <div data-aos="fade-right" data-aos-duration="1500">
                     <h3 class="headline text-white">About Us</h3>
-                    <p class="mb-5 c-tag-2 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
+                    <p class="mb-5 c-tag-2 light-16 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
                     <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="#">Our Products</a>
                 </div>
             </div>
@@ -642,7 +643,7 @@
               <div>
                 <img class="img-fluid" data-aos="fade-zoom-in"  data-aos-duration="2000" src="img/nacl-xxl.svg" alt="brand">
                 <div class="copyright mt-5">
-                    <p class="c-tag-2">
+                    <p class="c-tag-2 light-16">
                         NATURE AND CARE AGRO © <script>document.write(new Date().getFullYear());</script>
                         <br>All rights reserved
                     </p>
@@ -655,15 +656,15 @@
                 <h3 class="headline text-white">Contact Us</h3>
                 <ul class="footer-list list-unstyled footer-links text-lg-right">
                 <li>
-                    <p class="c-tag-2">NATURE & CARE AGRO Ltd.<br>Company Number: C-109105</p>
+                    <p class="c-tag-2 light-16">NATURE & CARE AGRO Ltd.<br>Company Number: C-109105</p>
                 </li>
                 <li>
-                    <p class="c-tag-2">House 13, Road 08, Sector-10,
+                    <p class="c-tag-2 light-16">House 13, Road 08, Sector-10,
                         <br>Uttara Model Town, Dhaka-1230,
                         <br>Dhaka, Bangladesh.</p>
                 </li>
                 <li>
-                    <p class="c-tag-2">info@natureandcare.com<br>01785-788189</p>
+                    <p class="c-tag-2 light-16">info@natureandcare.com<br>01785-788189</p>
                 </li>
               </ul>
             </div>
@@ -699,6 +700,15 @@
 
     <script>
         $(document).ready(function () {
+            $(".menu li a").click(function() {
+                $(".menu li a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
             /* counter plugin */
             $('.count').counterUp({
                 delay: 10,
@@ -710,24 +720,19 @@
     <script>
         /********* sticky header ********/
         $(window).scroll(function () {
-            if ($(window).scrollTop() > 0) {
+            if ($(window).scrollTop() > 5) {
                 $("header").addClass("stick");
                 $(".top-nav").addClass("top-none");
+
+                $(".navbar .navbar-brand img").attr("src","img/naturecare-xl-swip.svg");
+                $(".navbar .navbar-toggler img").attr("src","img/toggler-icon-swip.svg");
             } else {
                 $("header").removeClass("stick");
                 $(".top-nav").removeClass("top-none");
+
+                $(".navbar .navbar-brand img").attr("src","img/naturecare-xl.svg");
+                $(".navbar .navbar-toggler img").attr("src","img/toggler-icon.svg");
             }
-
-        /**logo changing**/
-        if($(this).scrollTop()>5){
-                    $(".navbar .navbar-brand img").attr("src","img/naturecare-xl-swip.svg");
-                    $(".navbar .navbar-toggler img").attr("src","img/toggler-icon-swip.svg");
-                }
-
-                else{
-                    $(".navbar .navbar-brand img").attr("src","img/naturecare-xl.svg");
-                    $(".navbar .navbar-toggler img").attr("src","img/toggler-icon.svg");
-                }
         });
     </script>
     <script>
