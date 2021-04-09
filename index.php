@@ -7,6 +7,7 @@
     <title>Nature & Care Agro Products Ltd.</title>
 
     <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <!--site details-->
     <meta name="description" content="Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.">
     <meta name="keywords" content="Nature & Care Agro Products Ltd., Nature and Care, Argiculture, Agrochemical , Fertilizers, Nourishment, Farmers, Bangladesh">
@@ -74,7 +75,7 @@
         </div>
 
         <div class="main-nav">
-            <nav class="navbar navbar-expand-lg py-2 cn-stick-nav">
+            <nav class="navbar navbar-expand-xl py-2 cn-stick-nav">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.php">
                         <img id="brand" src="img/naturecare-xl.svg" class="img-fluid" alt="nature care agro">
@@ -83,7 +84,7 @@
                         <img src="img/toggler-icon.svg" alt="toggler">
                      </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto ml-lg-4 menu mb-lg-0 mb-4">
+                    <ul class="navbar-nav mr-auto ml-lg-4 menu mb-xl-0 mb-4">
                         <li class="nav-item ml-lg-4 ml-cus">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -115,22 +116,58 @@
 
     <main>
         <section class="hero" id="home">
-            <div class="hero-bg">
-              <div class="container">
-                  <div class="row justify-content-center text-center">
-                      <div class="col-12 d-flex justify-content-center align-items-center">
-                          <div class="hero-text" data-aos="fade-up">
-                              <h1 class="dela-80 c-tag-4">Welcome to the<br>Home of Nature.</h1>
-                              <div class="my-5">
-                                  <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
-                                      EXPLORE AND DISCOVER
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+        <div class="hero-bg">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner hero-bg">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/welcome.jpg" alt="Home of Nature">
+                        <div class="carousel-caption hero-text" data-aos="fade-up">
+                            <h1 class="dela-80 c-tag-4">Welcome to the<br>Home of Nature.</h1>
+                            <div class="my-5">
+                                <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
+                                    EXPLORE AND DISCOVER
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/quality.jpg" alt="Quality">
+                        <div class="carousel-caption hero-text" data-aos="fade-up">
+                            <h1 class="dela-80 c-tag-4">Ensuring Quality<br>Across Country.</h1>
+                            <div class="my-5">
+                                <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
+                                    EXPLORE AND DISCOVER
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/nourishment.jpg" alt="Nourishment">
+                        <div class="carousel-caption hero-text" data-aos="fade-up">
+                            <h1 class="dela-80 c-tag-4">Farmers Proper<br>Nourishment</h1>
+                            <div class="my-5">
+                                <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
+                                    EXPLORE AND DISCOVER
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
+        </div>
         </section>
 
         <section class="services mt-5" id="service">
@@ -174,40 +211,48 @@
         <section class="products" id="products">
             <div class="pb-5" id="product-section">
                 <div class="owl-carousel nonloop-block-13">
-                    <a class="work-thumb" href="products/7.jpg" data-fancybox="gallery">
+                    <a class="work-thumb" href="img/Boric-Acid.png" data-fancybox="gallery">
                         <div class="work-text">
-                            <h3 class="c-tag-2">Product Name</h3>
+                            <h3 class="c-tag-2">Boric Acid</h3>
                         </div>
-                        <img src="products/7.jpg" alt="product" class="img-fluid">
+                        <img src="img/Boric-Acid.jpg" alt="Boric Acid" class="img-fluid">
                     </a>
 
-                    <a class="work-thumb" href="products/3.jpg" data-fancybox="gallery">
+                    <a class="work-thumb" href="img/Builder-50-WP.png" data-fancybox="gallery">
                         <div class="work-text">
-                            <h3 class="c-tag-2">Product Name</h3>
+                            <h3 class="c-tag-2">Builder 50 WP</h3>
                         </div>
-                        <img src="products/3.jpg" alt="product" class="img-fluid">
+                        <img src="img/Builder-50-WP.jpg" alt="Builder 50 WP" class="img-fluid">
                     </a>
 
-                    <a class="work-thumb" href="products/4.jpg" data-fancybox="gallery">
+                    <a class="work-thumb" href="img/Great-vit-pack.png" data-fancybox="gallery">
                         <div class="work-text">
-                            <h3 class="c-tag-2">Product Name</h3>
+                            <h3 class="c-tag-2">Great-vit-pack</h3>
                         </div>
-                        <img src="products/4.jpg" alt="product" class="img-fluid">
+                        <img src="img/Great-vit-pack.jpg" alt="Great vit pack" class="img-fluid">
                     </a>
 
-                    <a class="work-thumb" href="products/5.jpg" data-fancybox="gallery">
+                    <a class="work-thumb" href="img/Unique-5-SG.png" data-fancybox="gallery">
                         <div class="work-text">
-                            <h3 class="c-tag-2">Product Name</h3>
+                            <h3 class="c-tag-2">Unique 5 SG</h3>
                         </div>
-                        <img src="products/5.jpg" alt="product" class="img-fluid">
+                        <img src="img/Unique-5-SG.jpg" alt="Unique 5 SG" class="img-fluid">
                     </a>
 
-                    <a class="work-thumb" href="products/6.jpg" data-fancybox="gallery">
+                    <a class="work-thumb" href="img/Greatzim-50-WP.png" data-fancybox="gallery">
                         <div class="work-text">
-                            <h3 class="c-tag-2">Product Name</h3>
+                            <h3 class="c-tag-2">Greatzim 50 WP</h3>
                         </div>
-                        <img src="products/6.jpg" alt="product" class="img-fluid">
+                        <img src="img/Greatzim-50-WP.jpg" alt="Greatzim 50 WP" class="img-fluid">
                     </a>
+
+                    <a class="work-thumb" href="img/Mine-95-Sp.png" data-fancybox="gallery">
+                        <div class="work-text">
+                            <h3 class="c-tag-2">Mine 95 SP</h3>
+                        </div>
+                        <img src="img/Mine-95-Sp.jpg" alt="Mine 95 Sp" class="img-fluid">
+                    </a>
+
                 </div>
             </div>
             <div class="container">
