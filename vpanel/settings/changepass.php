@@ -22,9 +22,10 @@ if (isset($_POST['pass-submit'])) {
     if (empty($pass) || empty($new) || empty($retype)) {
         $_SESSION['errorMessage'] = 'All Fields Must Be Fill Out!';
     } else {
-        $query = "SELECT * FROM admin_ncagro WHERE admin_name = '$username'  AND admin_password = '$passcrypted'";
+        $query = "SELECT admin_password FROM admin_ncagro WHERE admin_name = '$username'";
         $exec = Query($query);
         $row = mysqli_fetch_array($exec);
+
         if ($passcrypted != $row["admin_password"]) {
             $_SESSION['errorMessage'] = "Enter Your current password correctly!";
         } else if (strcmp($new, $retype) != 0) {
@@ -39,6 +40,7 @@ if (isset($_POST['pass-submit'])) {
                 $_SESSION['errorMessage'] = "Please Try Again!";
             }
         }
+
     }
 }
 include "../partpage/header.php";

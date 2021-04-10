@@ -653,7 +653,7 @@ $exec = Query($view_count);
                 <div data-aos="fade-right" data-aos-duration="1500">
                     <h3 class="headline text-white">About Us</h3>
                     <p class="mb-5 c-tag-2 light-16 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
-                    <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="#">Our Products</a>
+                    <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="products.php">Our Products</a>
                 </div>
             </div>
 
