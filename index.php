@@ -1,3 +1,11 @@
+<?php
+include "./vpanel/includes/sessions.php";
+include "./vpanel/includes/functions.php";
+
+$view_count = "UPDATE nc_views SET views = views+1";
+$exec = Query($view_count);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +41,16 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNMYZ4D2WY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BNMYZ4D2WY');
+    </script>
 </head>
 <body>
     <header class="header-sticky">

@@ -1,0 +1,429 @@
+/*
+	#28a745;  green
+	#fc5185; pink
+	#f58334; blueok
+	#36344d; bluedark
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	background-color: #fff;
+}
+
+.container {
+	width: 90%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #2b2d42;
+	font-weight: 700;
+	margin: 0 0 10px;
+}
+
+a {
+	color: #2b2d42;
+	font-weight: 500;
+	-webkit-transition: 0.2s color;
+	transition: 0.2s color;
+}
+
+a:hover,
+a:focus {
+	color: #f58334;
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.title {
+	font-style: normal;
+	font-size: 33px;
+	color: aliceblue;
+	font-family: serif;
+}
+
+/*----------------------------*\
+	Header
+\*----------------------------*/
+
+#header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: #f58334;
+}
+
+.header-logo {
+	float: left;
+	width: 55%;
+	margin-left: 40%;
+}
+
+.hamburger-menu {
+	float: right;
+	padding: 15px 0px;
+}
+
+.hamburger-menu > div {
+	display: inline-block;
+}
+
+.hamburger-menu > div > a {
+	display: block;
+	position: relative;
+	width: 90px;
+	text-align: center;
+	color: #fff;
+}
+
+.hamburger-menu > div > a > i {
+	display: block;
+	font-size: 18px;
+}
+
+.hamburger-menu > div > a > span {
+	font-size: 12px;
+}
+
+.hamburger-menu .menu-toggle {
+	display: none;
+}
+
+/*----------------------------*\
+	Navigation
+\*----------------------------*/
+#navigation {
+	background: transparent;
+	float: right;
+	width: 50%;
+	margin-right: 25%;
+	margin-top: 10px;
+}
+
+.main-nav > li + li {
+	margin-left: 30px;
+}
+
+.main-nav > li > a {
+	padding: 20px 0px;
+	color: white;
+}
+
+.main-nav > li > a:hover,
+.main-nav > li > a:focus,
+.main-nav > li.active > a {
+	color: #fc5185;
+	background-color: transparent;
+}
+
+.main-nav > li > a:after {
+	content: "";
+	display: block;
+	width: 0%;
+	height: 2px;
+	background: white;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.main-nav > li > a:hover:after,
+.main-nav > li > a:focus:after,
+.main-nav > li.active > a:after {
+	width: 100%;
+}
+
+.header-ctn li.nav-toggle {
+	display: none;
+}
+
+/*----------------------------*\
+	Main Content Section
+\*----------------------------*/
+
+.content {
+	background: #fff;
+	position: relative;
+	z-index: 3;
+	width: 90%;
+}
+
+/*----------------------------*\
+	vPanel index
+\*----------------------------*/
+
+.login_wrapper {
+	right: 0px;
+	margin: 0px auto;
+	margin-top: 5%;
+	max-width: 350px;
+	position: relative;
+}
+
+.login_form {
+	z-index: 22;
+}
+
+.login_content {
+	margin: 0 auto;
+	padding: 25px 0 0;
+	position: relative;
+	text-align: center;
+	text-shadow: 0 1px 0 #fff;
+	min-width: 280px;
+}
+
+.login_content form {
+	margin: 20px 0;
+	position: relative;
+}
+
+.login_content h1 {
+	font-size: 25px;
+	line-height: 20px;
+	margin: 10px 0 30px;
+	color: #f58334;
+}
+
+.login_content form input[type="email"],
+.login_content form input[type="password"] {
+	border-radius: 3px;
+	border: 1px solid #c8c8c8;
+	color: #777;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+.login_content div .reset_pass {
+	margin-top: 13px !important;
+	margin-right: 39px;
+	float: right;
+}
+
+.login_content form div a {
+	font-size: 12px;
+	margin: 10px 15px 0 0;
+}
+
+.login_content .btn-default:hover {
+	text-decoration: none;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+:visited,
+:focus,
+:active,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	outline: 0;
+}
+
+.bridge {
+	border-top: 1px solid #d8d8d8;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+/*----------------------------*\
+	vPanel sidebar
+\*----------------------------*/
+
+.sidebar-menu {
+	position: fixed;
+	float: left;
+	width: 230px;
+	top: 45px;
+	left: 0;
+	bottom: 0;
+	background-color: #36344d;
+	box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
+	-o-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
+	-webkit-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
+	-moz-box-shadow: 0px 0px 10px 0px rgb(58, 41, 31);
+	z-index: 999;
+}
+
+.vpanel_menu {
+	text-align: left;
+	padding: 15px 14px 15px;
+}
+
+#vp_menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+#vp_menu li {
+	position: relative;
+	border-bottom: 1px ridge rgba(255, 255, 255, 0.04);
+}
+
+#vp_menu li a {
+	font-weight: 400;
+	position: relative;
+	display: block;
+	padding: 13px 20px;
+	color: #fff;
+	white-space: nowrap;
+	z-index: 2;
+	background-color: #36344d;
+	border: none;
+	border-left: 4px solid #333333;
+}
+
+#vp_menu li a:hover {
+	color: #ffffff;
+	background-color: #2a7d2e;
+	transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+	border-left: 4px solid #4a4a4a;
+}
+
+#vp_menu li.active > a {
+	background-color: #2b303a;
+	color: #ffffff;
+}
+
+#vp_menu ul li {
+	background-color: #333333;
+}
+
+#vp_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#vp_menu li ul {
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: -1px;
+	background-color: #2b303a;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity 0.1s linear;
+	border-top: 1px solid rgba(69, 74, 84, 0.7);
+}
+
+#vp_menu li:hover > ul {
+	visibility: visible;
+	opacity: 1;
+}
+
+#vp_menu .fa {
+	margin-right: 5px;
+}
+
+#vp_menu .v_active {
+	background-color: #f58334;
+}
+
+.md-hl {
+	margin-left: 55%;
+}
+
+/*----------------------------*\
+	vPanel counts
+\*----------------------------*/
+
+.vpanel_counts {
+	margin: 2%;
+	padding: 2rem 1rem;
+	border: 1px solid #dad9da;
+	border-left: .25rem solid #4e73df !important;
+	background-color: #ebfeef;
+}
+
+.vpanel_counts:hover {
+	box-shadow: 0 0 15px rgb(177, 171, 171);
+}
+
+.four-grid h3 {
+	font-size: 20px;
+	color: #2f1c6a;
+	margin: 14px 0;
+	font-weight: 400;
+}
+
+.four-grids h4 {
+	font-size: 30px;
+	color: #f58334;
+	margin: 0;
+}
+
+/*----------------------------*\
+	vPanel Categories
+\*----------------------------*/
+
+.btn-info {
+	background-color: #ad0909;
+	border-color: #f1cf69;
+}
+
+.btn-info:hover {
+	background-color: #f58334;
+}
+
+/*----------------------------*\
+	vPanel Add Products
+\*----------------------------*/
+
+.cat_dropdown {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.well {
+	margin-bottom: 0;
+	border: none;
+	background-color: #ecebfe;
+}
+.well form p {
+	font-weight: 700;
+}
+
+/*----------------------------*\
+	vPanel All Products
+\*----------------------------*/
+
+.i1 {
+	width: 70px;
+}
+
+.i1 img {
+	max-width: 90%;
+}
+
+#green_dot {
+	width: 10px;
+	height: 10px;
+	background: #28a745;
+	border-radius: 50%;
+}
+
+.message {
+	font-size: 16px;
+	color: #2a7d2e;
+	text-align: center;
+	margin-bottom: 15px;
+}

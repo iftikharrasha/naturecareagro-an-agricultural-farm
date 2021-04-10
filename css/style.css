@@ -607,3 +607,36 @@ button:focus {
 .breadcrumb a:hover {
 	color: #f58334;
 }
+
+.product-pagi {
+	margin: 0 auto;
+}
+
+.product-pagi li {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #f1cf69;
+	border: 1px solid #e4e7ed;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.product-pagi li a {
+	color: black;
+}
+
+.product-pagi .active {
+	background-color: #2a7d2e;
+}
+
+.page-link {
+	color: #f1cf69 !important;
+	background-color: transparent;
+}
+
+.page-link:hover {
+	background-color: #f58334;
+}

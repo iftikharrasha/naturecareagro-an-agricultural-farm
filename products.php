@@ -1,3 +1,11 @@
+<?php
+include "./vpanel/includes/sessions.php";
+include "./vpanel/includes/functions.php";
+
+$view_count = "UPDATE nc_views SET views = views+1";
+$exec = Query($view_count);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +36,16 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNMYZ4D2WY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BNMYZ4D2WY');
+    </script>
 </head>
 <body>
     <header class="header-sticky">
@@ -127,6 +145,34 @@
                     </div>
                 </div>
                 <div class="row mb-5">
+
+<?php
+$numOfCols = 3;
+$bootstrapColWidth = 12 / $numOfCols;
+$page = 1;
+$query = "";
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+    $showPost = ($page * 16) - 16;
+    if ($page <= 0) {
+        $showPost = 0;
+    }
+    $query = "SELECT * FROM nc_products ORDER BY date_time DESC LIMIT $showPost,16";
+} else {
+    $query = "SELECT * FROM nc_products ORDER BY date_time DESC LIMIT 0,16";
+}
+
+$exec = Query($query) or die(mysqli_error($con));
+if ($exec) {
+    global $results;
+    $results = mysqli_num_rows($exec);
+    if (mysqli_num_rows($exec) > 0) {
+        while ($post = mysqli_fetch_assoc($exec)) {
+            $pro_id = $post['product_id'];
+            $pro_title = $post['product_title'];
+            $pro_image = $post['product_image'];
+
+            ?>
                                 <!-- Item -->
                                 <div class="col-lg-3 col-sm-4">
                                     <div class="product" data-aos="fade-up" data-aos-duration="500">
@@ -134,51 +180,81 @@
                                             <div class="work-text">
                                                 <h5 class="text-uppercase btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4">Order Now</h5>
                                             </div>
-                                            <img src="products/Zimda-Pack.jpg" alt="Mine 95 Sp" class="img-fluid">
+                                            <img src="products/<?php echo $pro_image; ?>" alt="<?php echo htmlentities($pro_title); ?>" class="img-fluid">
                                         </a>
-                                        <h3 class="my-3 semi-16">Zimda Pack</h3>
+                                        <h3 class="my-3 semi-16"><?php echo htmlentities($pro_title); ?></h3>
                                     </div>
                                 </div>
                                 <!-- Item -->
-                                <!-- Item -->
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product" data-aos="fade-up" data-aos-duration="500">
-                                        <a class="work-thumb" href="#contact" data-fancybox="gallery">
-                                            <div class="work-text">
-                                                <h5 class="text-uppercase btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4">Order Now</h5>
-                                            </div>
-                                            <img src="products/Zimda-Pack.jpg" alt="Mine 95 Sp" class="img-fluid">
-                                        </a>
-                                        <h3 class="my-3 semi-16">Mine 95 SP</h3>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <!-- Item -->
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product" data-aos="fade-up" data-aos-duration="500">
-                                        <a class="work-thumb" href="#contact" data-fancybox="gallery">
-                                            <div class="work-text">
-                                                <h5 class="text-uppercase btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4">Order Now</h5>
-                                            </div>
-                                            <img src="products/Zimda-Pack.jpg" alt="Mine 95 Sp" class="img-fluid">
-                                        </a>
-                                        <h3 class="my-3 semi-16">Mine 95 SP</h3>
-                                    </div>
-                                </div>
-                                <!-- Item -->
-                                <!-- Item -->
-                                <div class="col-lg-3 col-sm-4">
-                                    <div class="product" data-aos="fade-up" data-aos-duration="500">
-                                        <a class="work-thumb" href="#contact" data-fancybox="gallery">
-                                            <div class="work-text">
-                                                <h5 class="text-uppercase btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4">Order Now</h5>
-                                            </div>
-                                            <img src="products/Zimda-Pack.jpg" alt="Mine 95 Sp" class="img-fluid">
-                                        </a>
-                                        <h3 class="my-3 semi-16">Zimda Pack</h3>
-                                    </div>
-                                </div>
-                                <!-- Item -->
+
+<?php
+}
+    } else {
+        echo "<div class='text-uppercase text-center reg-30' style='padding-bottom: 20px;'>No products have been found!</div>";
+    }
+}
+?>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagi-numbers">
+            <div class="container overflow-hidden">
+            <div class="row float-right">
+						<div class="col-xs-12 pr-5">
+                            <ul class="pagination product-pagi" id="pageno">
+<?php
+if ($page > 1) {
+    ?>
+									<li>
+										<a href="products.php?page=<?php echo $page - 1; ?>" aria-label="Previous">
+										  <span aria-hidden="true">&laquo;
+										  </span>
+										  <span class="sr-only">Previous
+										  </span>
+										</a>
+									</li>
+<?php
+}
+$sql = "SELECT COUNT(*) FROM nc_products";
+
+$exec = Query($sql);
+$rowCount = mysqli_fetch_array($exec);
+$totalRow = array_shift($rowCount);
+$postPerPage = ceil($totalRow / 16);
+
+for ($count = 1; $count <= $postPerPage; $count++) {
+    if ($page == $count) {
+        ?>
+									<li class="active">
+										<a class="page-link" href="products.php?page=<?php echo $count ?>"><?php echo $count ?>
+										</a>
+									</li>
+<?php
+} else {
+        ?>
+									<li>
+										<a href="products.php?page=<?php echo $count ?>"> <?php echo $count ?>
+										</a>
+									</li>
+<?php
+}
+}
+if ($page < $postPerPage) {
+    ?>
+									<li>
+										<a href="products.php?page=<?php echo $page + 1; ?>" aria-label="Next">
+										  <span aria-hidden="true">&raquo;
+										  </span>
+										  <span class="sr-only">Next
+										  </span>
+										</a>
+									</li>
+<?php
+}
+?>
+								</ul>
+                        </div>
                 </div>
             </div>
         </section>
