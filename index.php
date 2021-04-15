@@ -15,8 +15,8 @@ $exec = Query($view_count);
     <title>Nature & Care Agro Products Ltd. | Home</title>
 
     <link rel="icon" href="img/icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+
     <!--site details-->
     <meta name="description" content="Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.">
     <meta name="keywords" content="Nature & Care Agro Products Ltd., Nature and Care, Argiculture, Agrochemical , Fertilizers, Nourishment, Farmers, Bangladesh">
@@ -111,19 +111,16 @@ $exec = Query($view_count);
                             <a class="nav-link" href="#service">Services</a>
                         </li>
                         <li class="nav-item ml-lg-4 ml-cus">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item ml-lg-4 ml-cus">
                             <a class="nav-link" href="#history">Journey</a>
                         </li>
                         <li class="nav-item ml-lg-4 ml-cus">
-                            <a class="nav-link" href="#video">Intro</a>
+                            <a class="nav-link" href="#retailer">Distributors & Retailers</a>
                         </li>
                         <li class="nav-item ml-lg-4 ml-cus">
-                            <a class="nav-link" href="#retailer">Retailers</a>
-                        </li>
-                        <li class="nav-item ml-lg-4 ml-cus">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item ml-lg-4 ml-cus">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                     <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-2 px-3" href="products.php">Our products</a>
@@ -168,7 +165,7 @@ $exec = Query($view_count);
                         <div class="carousel-item">
                             <img class="d-block w-100" src="img/nourishment.jpg" alt="Nourishment">
                             <div class="carousel-caption hero-text" data-aos="fade-up">
-                                <h1 class="dela-80 c-tag-4">Farmers Proper<br>Nourishment</h1>
+                                <h1 class="dela-80 c-tag-4">Heart of Perfect<br>Farming</h1>
                                 <div class="my-5">
                                     <a class="text-uppercase btn-tag-2 py-2 px-3" href="#history">
                                         EXPLORE AND DISCOVER
@@ -237,13 +234,6 @@ $exec = Query($view_count);
                         <img src="img/Boric-Acid.jpg" alt="Boric Acid" class="img-fluid">
                     </a>
 
-                    <a class="work-thumb" href="img/Builder-50-WP.png" data-fancybox="gallery">
-                        <div class="work-text">
-                            <h3 class="c-tag-2">Builder 50 WP</h3>
-                        </div>
-                        <img src="img/Builder-50-WP.jpg" alt="Builder 50 WP" class="img-fluid">
-                    </a>
-
                     <a class="work-thumb" href="img/Great-vit-pack.png" data-fancybox="gallery">
                         <div class="work-text">
                             <h3 class="c-tag-2">Great-vit-pack</h3>
@@ -303,7 +293,7 @@ $exec = Query($view_count);
                         <div class="row bg-tag-3">
                             <div class="col-md-12 my-4 overflowX">
                                 <div class="farmers-img" data-aos="fade-left" data-aos-duration="1500">
-                                    <img src="img/farmers.jpg" alt="farmers">
+                                    <img src="img/leaf.jpg" alt="leaf">
                                 </div>
                             </div>
                             <div class="col-lg-7">
@@ -312,7 +302,7 @@ $exec = Query($view_count);
                                         <span class="fan-30 c-tag-1">Since 2013!
                                         </span>
                                     </h3>
-                                    <p class="c-tag-5" data-aos="fade-up" data-aos-duration="500">One 13th May, 2013, a business that started with only 4 employees in the corner room of a rented apartment has now become a common name amongst agrochemical distributors, retailers and farmers almost all over Bangladesh. This overwhelming acceptance has been possible for ensuring the consistency of excolence in quality for the last seven years.</p>
+                                    <p class="c-tag-5" data-aos="fade-up" data-aos-duration="500">One 13th May, 2013, a business that started with only 4 employees in the corner room of a rented apartment has now become a common name amongst agrochemical distributors, retailers and farmers almost all over Bangladesh. This overwhelming acceptance has been possible for ensuring the consistency of excellence in quality for the last seven years.</p>
                                     <div class="year-details" data-aos="fade-up" data-aos-duration="1000">
                                         <span class="fan-30 c-tag-1">2015
                                         </span>
@@ -356,11 +346,11 @@ $exec = Query($view_count);
 
                                 <div class="bg-tag-1 p-4 p-sm-5 my-4" data-aos="fade-right" data-aos-duration="1500">
                                     <h3>
-                                        <span class="fan-30 c-tag-4">Milestone
+                                        <span class="fan-30 c-tag-4">Mission
                                         </span>
                                     </h3>
                                     <p class="text-white">
-                                        In May 2013, Nature & Care Agro Products Ltd. commenced its operation as a private limited company with the aim of providing a complete solution for farmers to cultivate and harvest healthy crops without compromising with their natural nutrients. In order to make this successful the right amount and combination of agrochemicals is vital for each pesticide.
+                                        In May 2013, Nature & Care Agro Products Ltd. commenced its operation as a private limited company with the aim of providing a complete solution for farmers to cultivate and harvest healthy crops without compromising with their natural nutrients. In order to make this successful we deliver the perfect amount and combination of agrochemicals suitable for each crop.
                                     </p>
                                 </div>
 
@@ -390,20 +380,20 @@ $exec = Query($view_count);
                             </div>
                                 <div class="py-5">
                                     <div class="nature-item">
-                                        <span class="count c-tag-2 fan-80">7</span>
+                                        <span class="counter c-tag-2 fan-80">7</span>
                                         <p class="c-tag-4 reg-38">Years</p>
                                     </div>
                                     <div class="nature-item">
-                                        <span class="count c-tag-2 fan-80">23</span>
-                                        <p class="c-tag-4 reg-38">Specialists</p>
-                                    </div>
-                                    <div class="nature-item">
-                                        <span class="count c-tag-2 fan-80">106</span>
+                                        <span class="counter c-tag-2 fan-80">180</span>
                                         <p class="c-tag-4 reg-38">Employees</p>
                                     </div>
                                     <div class="nature-item">
-                                        <span class="count c-tag-2 fan-80">1442</span><span class="c-tag-2 fan-80">+</span>
-                                        <p class="c-tag-4 reg-38">Plants</p>
+                                        <span class="counter c-tag-2 fan-80">400</span>
+                                        <p class="c-tag-4 reg-38">Distributors</p>
+                                    </div>
+                                    <div class="nature-item">
+                                        <span class="counter c-tag-2 fan-80">5000</span><span class="c-tag-2 fan-80">+</span>
+                                        <p class="c-tag-4 reg-38">Customers</p>
                                     </div>
                                 </div>
                         </div>
@@ -516,7 +506,7 @@ $exec = Query($view_count);
                             <div class="bg-tag-1 p-4 p-sm-5">
                                 <h4 class="c-tag-4 reg-30">We work with big and small.</h4>
                                 <p class="my-4 c-tag-2">
-                                    Within a period of 7 years Nature & Care Agro Ldt. has gained sustainable trust and popularity among the agrochemical retailers, distributors and farmers all over Bangladesh.
+                                    Within a period of 7 years Nature & Care Agro Ltd. has gained sustainable trust and popularity among the agrochemical retailers, distributors and farmers all over Bangladesh.
                                 </p>
                             </div>
                         </div>
@@ -649,7 +639,7 @@ $exec = Query($view_count);
     <footer class="footer-section pb-0 py-lg-5 bg-tag-1">
         <div class="container c_custom">
           <div class="row">
-            <div class="border-r-lg col-lg-5 text-center text-lg-left overflowX">
+            <div class="border-r-lg col-lg-5 text-center text-lg-left">
                 <div data-aos="fade-right" data-aos-duration="1500">
                     <h3 class="headline text-white">About Us</h3>
                     <p class="mb-5 c-tag-2 light-16 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
@@ -705,14 +695,14 @@ $exec = Query($view_count);
         </div>
     </div>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/counter/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/counter/waypoints.min.js"></script>
+    <script src="js/counter/jquery.counterup.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 
@@ -728,7 +718,7 @@ $exec = Query($view_count);
     <script>
         $(document).ready(function () {
             /* counter plugin */
-            $('.count').counterUp({
+            $('.counter').counterUp({
                 delay: 10,
                 time: 2000
             });

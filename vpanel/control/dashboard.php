@@ -22,6 +22,8 @@ if (isset($_POST['post-submit'])) {
     $top = 0;
 
     $title = mysqli_real_escape_string($con, $_POST['post-title']);
+    $category = mysqli_real_escape_string($con, $_POST['post-category']);
+    $composition = mysqli_real_escape_string($con, $_POST['post-comp']);
     $dateTime = strftime('%Y-%m-%d', $time);
 
     $custom_title = str_replace(' ', '', $title); //delete spaces between words
@@ -38,8 +40,8 @@ if (isset($_POST['post-submit'])) {
     } else if ($title_length > 50) {
         $_SESSION['errorMessage'] = "Title Is Too Long!";
     } else {
-        $query = "INSERT INTO nc_products (date_time, product_title, added_by, product_image, views)
-    VALUES ('$dateTime', '$title','$author', '$newfilename', '$views')";
+        $query = "INSERT INTO nc_products (date_time, product_title, added_by, product_image, views, product_category, product_composition)
+    VALUES ('$dateTime', '$title','$author', '$newfilename', '$views', '$category', '$composition')";
 
         $exec = Query($query);
         if ($exec) {
@@ -78,18 +80,8 @@ include "../partpage/header.php";
   <div class="row">
     <?php include "../partpage/sidebar.php";?>
     <div class="col-md-10 content" style="margin-left:10px">
-      <div class="panel-body-boots">
-      <h3>
-<?php //success message
-if (isset($_POST['success'])) {
-    $success = $_POST["success"];
-    echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <span class='glyphicon glyphicon-ok'></h1></span>";
-}
-?>
-        </h3>
-      </div>
       <div class="four-grids" style="margin-bottom: 30px; ">
-        <div class="col-md-3 four-grid">
+        <div class="col-lg-3 four-grid">
           <div class="vpanel_counts c_one">
               <div class="four-text">
                 <h3>Total Products
@@ -99,7 +91,7 @@ if (isset($_POST['success'])) {
               </div>
           </div>
         </div>
-        <div class="col-md-3 four-grid">
+        <div class="col-lg-3 four-grid">
           <div class="vpanel_counts c_eight">
               <div class="four-text">
                 <h3>Site Visits
@@ -115,6 +107,28 @@ if (isset($_POST['success'])) {
               <p>Title
               </p>
               <input class="input-md thumbnail form-control" type="text" name="post-title" id="product_name" autofocus="" style="width:100%" placeholder="Product Name" required="">
+
+              <p>Category</p>
+            <select class="cat_dropdown" name="post-category" id="post-category">
+<?php
+$sql = "SELECT * FROM categories";
+
+$exec = Query($sql);
+while ($row = mysqli_fetch_assoc($exec)) {
+    $catid = $row["cat_id"];
+    echo "
+
+			<option>$row[cat_title]</option>
+
+		";
+}
+?>
+            </select>
+            <br>
+
+              <p>Composition
+              </p>
+              <input class="input-md thumbnail form-control" type="text" name="post-comp" id="product_comp" style="width:100%" placeholder="Product Composition" required="">
 
               <p style="margin-bottom: 25px">Optimize image before uploading:
                 <button type="button"> <a href="https://tinypng.com/" target="_blank">tinypng</a>
@@ -174,9 +188,11 @@ if (mysqli_num_rows($exec) < 1) {
                   </th>
                   <th class="text-center">Product Name
                   </th>
+                  <th>Category
+                  </th>
                   <th class="text-center">Image
                   </th>
-                  <th class="text-center">Author
+                  <th class="text-center">Composition
                   </th>
                   <th class="text-center">Date
                   </th>
@@ -188,6 +204,8 @@ while ($post = mysqli_fetch_assoc($exec)) {
         $product_No = $productNo;
         $product_id = $post['product_id'];
         $title = $post['product_title'];
+        $cat = $post['product_category'];
+        $comp = $post['product_composition'];
         $image = $post['product_image'];
         $date = $post['date_time'];
         $author = $post['added_by'];
@@ -199,11 +217,14 @@ while ($post = mysqli_fetch_assoc($exec)) {
                   <td>
                     <?php echo $title; ?>
                   </td>
+                  <td>
+                      <?php echo $cat; ?>
+                  </td>
                   <td class="i1">
                       <?php echo "<img class='img-responsive' src='../../products/$image'>"; ?>
                   </td>
                   <td>
-                      <?php echo $author; ?>
+                      <?php echo $comp; ?>
                   </td>
                   <td>
                       <?php echo $date; ?>

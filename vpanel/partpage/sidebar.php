@@ -13,6 +13,16 @@
               </div>
             </a>
           </li>
+          <li>
+            <a href="../control/categories.php">
+              <i class="fa fa-hashtag">
+              </i>
+              <span>Categories
+              </span>
+              <div class="clearfix">
+              </div>
+            </a>
+          </li>
           <li id="menu-academico">
             <a target="_blank" href="../../index.php">
               <i class="fa fa-location-arrow">

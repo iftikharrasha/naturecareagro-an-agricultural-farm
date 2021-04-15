@@ -171,6 +171,8 @@ if ($exec) {
             $pro_id = $post['product_id'];
             $pro_title = $post['product_title'];
             $pro_image = $post['product_image'];
+            $pro_cat = $post['product_category'];
+            $pro_comp = $post['product_composition'];
 
             ?>
                                 <!-- Item -->
@@ -182,7 +184,9 @@ if ($exec) {
                                             </div>
                                             <img src="products/<?php echo $pro_image; ?>" alt="<?php echo htmlentities($pro_title); ?>" class="img-fluid">
                                         </a>
-                                        <h3 class="my-3 semi-16"><?php echo htmlentities($pro_title); ?></h3>
+                                        <h2 class="mt-3 semi-16 reg-20 bg-tag-4 py-3 c-tag-2"><?php echo htmlentities($pro_title); ?></h2>
+                                        <p class="mb-0 light-16"><?php echo htmlentities($pro_comp); ?></p>
+                                        <p class="mb-3 semi-16"><?php echo htmlentities($pro_cat); ?></p>
                                     </div>
                                 </div>
                                 <!-- Item -->
@@ -319,7 +323,7 @@ if ($page < $postPerPage) {
     <footer class="footer-section pb-0 py-lg-5 bg-tag-1">
         <div class="container c_custom">
           <div class="row">
-            <div class="border-r-lg col-lg-5 text-center text-lg-left overflowX">
+            <div class="border-r-lg col-lg-5 text-center text-lg-left">
                 <div data-aos="fade-right" data-aos-duration="1500">
                     <h3 class="headline text-white">About Us</h3>
                     <p class="mb-5 c-tag-2 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
@@ -375,7 +379,7 @@ if ($page < $postPerPage) {
         </div>
     </div>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/counter/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>

@@ -85,6 +85,11 @@ body {
 	background-color: #e9f1ee;
 }
 
+.bg-tag-4 {
+	border-radius: 5px;
+	background: #2a7d2e;
+}
+
 /** font sizes **/
 .headline {
 	font-family: 'Oswald-Bold', sans-serif;
@@ -92,7 +97,7 @@ body {
 }
 
 .dela-80 {
-	font-family: 'Dela Gothic One', cursive;
+	font-family: 'Oswald-Bold', sans-serif;
 	font-size: 80px;
 	word-spacing: 5px;
 }

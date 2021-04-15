@@ -21,11 +21,11 @@ if (($_POST['name_typed'] != "") && ($_POST['email_typed'] != "")) {
         $mail->Port = 587;
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
-        $mail->Username = 'contact@iftikharrasha.com';
+        $mail->Username = 'info@naturecareagro.com';
         $mail->Password = '22Novemb';
 
         $mail->setFrom($email_typed, $name_typed);
-        $mail->addAddress('contact@iftikharrasha.com');
+        $mail->addAddress('info@naturecareagro.com');
         $mail->addReplyTo($email_typed, $name_typed);
 
         $mail->isHTML(true);
