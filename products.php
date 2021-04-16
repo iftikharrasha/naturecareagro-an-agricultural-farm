@@ -4,6 +4,10 @@ include "./vpanel/includes/functions.php";
 
 $view_count = "UPDATE nc_views SET views = views+1";
 $exec = Query($view_count);
+
+//total products counts
+$countProducts = mysqli_query($con, "SELECT COUNT(product_id) as TOTAL FROM nc_products");
+$totalProducts = mysqli_fetch_assoc($countProducts);
 ?>
 
 <!DOCTYPE html>
@@ -98,19 +102,19 @@ $exec = Query($view_count);
                         <img src="img/toggler-icon.svg" alt="toggler">
                      </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto ml-lg-4 menu mb-xl-0 mb-4">
-                        <li class="nav-item ml-lg-4 ml-cus">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item ml-lg-4 ml-cus">
-                            <a class="nav-link" href="#products">Products</a>
-                        </li>
-                        <li class="nav-item ml-lg-4 ml-cus">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+                        <ul class="navbar-nav mr-auto ml-lg-4 menu mb-xl-0 mb-4">
+                            <li class="nav-item ml-lg-4 ml-cus">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item ml-lg-4 ml-cus">
+                                <a class="nav-link" href="#products">Products</a>
+                            </li>
+                            <li class="nav-item ml-lg-4 ml-cus">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-2 px-3" href="index.php">About Us</a>
-                </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -145,21 +149,65 @@ $exec = Query($view_count);
                     </div>
                 </div>
                 <div class="row mb-5">
+                    <div class="col-lg-2 col-sm-4">
+                        <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center mt-3 mb-5 overflowX">
+                        <div class="category-div" data-aos="fade-left" data-aos-duration="1500">
+							<h5 class="bg-tag-5 px-5 py-3 c-tag-2 semi-16 reg-30 text-center">Categories</h5>
+							<div class="text-left bg-tag-3 px-3 pb-3 border-right border-bottom rounded">
+                                <div type="button" class="btn navbar-btn btn-ml-md">
+										<a href="products.php" class="c-tag-7">All<small class="qty"> (<?php echo $totalProducts['TOTAL']; ?>)</small></a>
+								</div>
+<?php
+$sql = "SELECT * FROM categories";
+
+$exec = Query($sql);
+if (mysqli_num_rows($exec) > 0) {
+    $i = 1;
+    while ($category = mysqli_fetch_assoc($exec)) {
+        $cat_id = $category["cat_id"];
+        $cat_name = $category["cat_title"];
+
+        $run_query = "SELECT COUNT(*) AS count_items FROM nc_products WHERE product_category='$cat_name'";
+        $query = Query($run_query);
+        $row = mysqli_fetch_array($query);
+        $count = $row["count_items"];
+        $i++;
+
+        echo "
+								<div type='button' class='btn navbar-btn btn-ml-md' catid='$cat_id'>
+										<a href='products.php?category=$cat_name' class='c-tag-7'>$cat_name<small class='qty'> ($count)</small></a>
+								</div>
+				";
+    }
+    ?>
+							</div>
+<?php
+}
+?>
+						</div>
+                        </div>
+                      </div>
+				    </div>
+                    <div class="col-lg-10 col-sm-8">
+                        <div class="row">
 
 <?php
 $numOfCols = 3;
 $bootstrapColWidth = 12 / $numOfCols;
 $page = 1;
 $query = "";
-if (isset($_GET['page'])) {
+if (isset($_GET['category'])) {
+    $query = "SELECT * FROM nc_products WHERE product_category = '$_GET[category]'";
+} else if (isset($_GET['page'])) {
     $page = $_GET['page'];
-    $showPost = ($page * 16) - 16;
+    $showPost = ($page * 15) - 15;
     if ($page <= 0) {
         $showPost = 0;
     }
-    $query = "SELECT * FROM nc_products ORDER BY date_time DESC LIMIT $showPost,16";
+    $query = "SELECT * FROM nc_products ORDER BY date_time DESC LIMIT $showPost,15";
 } else {
-    $query = "SELECT * FROM nc_products ORDER BY date_time DESC LIMIT 0,16";
+    $query = "SELECT * FROM nc_products ORDER BY date_time DESC LIMIT 0,15";
 }
 
 $exec = Query($query) or die(mysqli_error($con));
@@ -173,10 +221,9 @@ if ($exec) {
             $pro_image = $post['product_image'];
             $pro_cat = $post['product_category'];
             $pro_comp = $post['product_composition'];
-
             ?>
                                 <!-- Item -->
-                                <div class="col-lg-3 col-sm-4">
+                                <div class="col-lg-4 col-sm-6">
                                     <div class="product" data-aos="fade-up" data-aos-duration="500">
                                         <a class="work-thumb" href="#contact" data-fancybox="gallery">
                                             <div class="work-text">
@@ -186,7 +233,7 @@ if ($exec) {
                                         </a>
                                         <h2 class="mt-3 semi-16 reg-20 bg-tag-4 py-3 c-tag-2"><?php echo htmlentities($pro_title); ?></h2>
                                         <p class="mb-0 light-16"><?php echo htmlentities($pro_comp); ?></p>
-                                        <p class="mb-3 semi-16"><?php echo htmlentities($pro_cat); ?></p>
+                                        <a href="products.php?category=<?php echo htmlentities($pro_cat); ?>" class="mb-3 semi-16 c-tag-7"><?php echo htmlentities($pro_cat); ?></a>
                                     </div>
                                 </div>
                                 <!-- Item -->
@@ -198,6 +245,9 @@ if ($exec) {
     }
 }
 ?>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -225,7 +275,7 @@ $sql = "SELECT COUNT(*) FROM nc_products";
 $exec = Query($sql);
 $rowCount = mysqli_fetch_array($exec);
 $totalRow = array_shift($rowCount);
-$postPerPage = ceil($totalRow / 16);
+$postPerPage = ceil($totalRow / 15);
 
 for ($count = 1; $count <= $postPerPage; $count++) {
     if ($page == $count) {
@@ -264,59 +314,9 @@ if ($page < $postPerPage) {
         </section>
 
         <section class="contact my-5" id="contact">
-            <div class="container c_custom">
-                <div class="row pt-0 pt-lg-5">
-                    <div class="col-lg-12 text-center mb-5">
-                        <h2 class="my-5 headline c-tag-3" data-aos="zoom-in" data-aos-duration="1500">Contact Us</h2>
-                    </div>
-                </div>
-                <div class="row contact-shadow mx-2">
-                    <div class="col-lg-6 px-4">
-                        <div class="contact-heading">
-                            <h2 class="my-5 semi-30 c-tag-1">
-                                <span>Bring nature to your home.</span>
-                            </h2>
-                            <form id="contact-form" method="post" action="">
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-input mb-4 mb-md-0">
-                                      <input type="text" id="name-typed" name="name" class="form-control py-4" placeholder="Your name" subject_typed>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="form-input mb-0">
-                                      <input type="text" id="subject-typed" name="subject" class="form-control" placeholder="Your subject" subject_typed>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-12">
-                                    <div class="form-input my-4">
-                                        <input type="email" id="email-typed" name="email" class="form-control" placeholder="Your email" required>
-                                      </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-12">
-                                    <div class="form-input mb-4">
-                                      <textarea type="text" id="message-typed" name="description" rows="5" class="form-control md-textarea" placeholder="Drop your query Here" required></textarea>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="text-center text-md-left">
-                                    <button id="contact-pressed" name="contact-pressed" class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" type="submit">Submit</button>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-lg-0 mt-5 px-4 pt-2">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d542.307100573765!2d90.38803404704723!3d23.88278195296678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5404f3eeecb%3A0xab1b1f6c864ecc55!2sNature%20%26%20Care%20Agro%20Products%20Limited!5e0!3m2!1sen!2sbd!4v1616468614318!5m2!1sen!2sbd" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
+            <!-- new products -->
+            <?php include "contact.php";?>
+			<!-- new products -->
         </section>
     </main>
 
@@ -326,8 +326,8 @@ if ($page < $postPerPage) {
             <div class="border-r-lg col-lg-5 text-center text-lg-left">
                 <div data-aos="fade-right" data-aos-duration="1500">
                     <h3 class="headline text-white">About Us</h3>
-                    <p class="mb-5 c-tag-2 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
-                    <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="#">Our Products</a>
+                    <p class="mb-5 c-tag-2 light-16 us">Nature & Care Agro Products Ltd. is a private limited company involved in importing and repackaging of pesticides and micro fertilizers. We are an emerging agrochemical company thriving to provide superior quality agricultural commodities at the most competitive price.</p>
+                    <a class="text-uppercase ml-auto btn-tag-1 bg-tag-2 c-tag-7 py-3 px-4" href="products.php">Our Products</a>
                 </div>
             </div>
 
@@ -335,7 +335,7 @@ if ($page < $postPerPage) {
               <div>
                 <img class="img-fluid" data-aos="fade-zoom-in"  data-aos-duration="2000" src="img/nacl-xxl.svg" alt="brand">
                 <div class="copyright mt-5">
-                    <p class="c-tag-2">
+                    <p class="c-tag-2 light-16">
                         NATURE AND CARE AGRO © <script>document.write(new Date().getFullYear());</script>
                         <br>All rights reserved
                     </p>
@@ -348,15 +348,15 @@ if ($page < $postPerPage) {
                 <h3 class="headline text-white">Contact Us</h3>
                 <ul class="footer-list list-unstyled footer-links text-lg-right">
                 <li>
-                    <p class="c-tag-2">NATURE & CARE AGRO Ltd.<br>Company Number: C-109105</p>
+                    <p class="c-tag-2 light-16">NATURE & CARE AGRO Ltd.<br>Company Number: C-109105</p>
                 </li>
                 <li>
-                    <p class="c-tag-2">House 13, Road 08, Sector-10,
+                    <p class="c-tag-2 light-16">House 13, Road 08, Sector-10,
                         <br>Uttara Model Town, Dhaka-1230,
                         <br>Dhaka, Bangladesh.</p>
                 </li>
                 <li>
-                    <p class="c-tag-2">info@natureandcare.com<br>01785-788189</p>
+                    <p class="c-tag-2 light-16">info@natureandcare.com<br>01785-788189</p>
                 </li>
               </ul>
             </div>
@@ -379,12 +379,22 @@ if ($page < $postPerPage) {
         </div>
     </div>
 
-    <script src="js/counter/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".menu li a").click(function() {
+                $(".menu li a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
 
     <script>
         /********* sticky header ********/
@@ -409,6 +419,7 @@ if ($page < $postPerPage) {
                 }
         });
     </script>
+
     <script>
             $(document).ready(function() {
             var delay = 2000;

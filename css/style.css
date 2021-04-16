@@ -53,7 +53,7 @@ body {
 }
 
 .c-tag-3 {
-	color: #124a2f;
+	color: #124a2f !important;
 }
 
 .c-tag-4 {
@@ -87,7 +87,12 @@ body {
 
 .bg-tag-4 {
 	border-radius: 5px;
-	background: #2a7d2e;
+	background-color: #2a7d2e;
+}
+
+.bg-tag-5 {
+	border-radius: 5px;
+	background-color: #f58334;
 }
 
 /** font sizes **/
