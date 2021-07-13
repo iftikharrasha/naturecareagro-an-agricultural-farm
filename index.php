@@ -693,6 +693,7 @@ $exec = Query($view_count);
             }
         });
     </script>
+	
     <script>
             $(document).ready(function() {
             var delay = 2000;
